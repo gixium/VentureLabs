@@ -5,9 +5,6 @@ HCI - Polimi a.a. 2024/25
 |:--------------:|:-------------:|:-------------------------:|:--------------:|:--------------------:|:----------------:|
 |       🟢       |       🟢      |              🟡           |       🔴       |         🔴           |     🔴           |
 
-Legend: 🟢 Completed 🟡 In progress 🔴 Not started
-***
-
 ## Fasi di sviluppo
 
 ### [C1 - NeedFinding](/C1/C1%20-%20Needfinding.pdf)
