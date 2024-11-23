@@ -9,6 +9,8 @@
 /* Changing background color */
 body {
   background: var(--bg-color) !important;
+  font-family: Montserrat;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -144,7 +146,7 @@ button.tiny {
   /* border: 1px solid white; */
   border: 2px solid var(--gray-color);
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */ /* Creates smoothness prolems on mobile devices*/
   border-radius: 25px;
   text-align: center;
   cursor: pointer;
@@ -209,19 +211,6 @@ button.tiny {
     flex-direction: column;
   }
 }
-
-/* @media screen and (max-width: 374px) {
-  .super-wrapper-pannello {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width:375px) and (max-width: 800px){
-  .super-wrapper-pannello {
-    display: flex;
-    flex-direction: column;
-  }
-} */
 
 /*******************************************************/
 
