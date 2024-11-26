@@ -200,9 +200,16 @@ button.tiny {
 }
 
 .universe-pannello {
+  /* ! FIX IOS DISPLAY PROBLEMS */
+  display: grid;
+  place-items: center;
+  place-self: center;
+
+  /* LEGACY
   width: 80%;
   justify-self: center;
-  justify-items: center;
+  justify-items: center; 
+  */
 }
 
 @media screen and (max-width: 800px) {
@@ -249,16 +256,6 @@ h1 {
   display: flex;
   align-self: center;
   column-gap: 50px;
-}
-
-.wrapper-chisiamo {
-  display: flex;
-  flex-direction: row;
-  width: 200px;
-}
-
-.wrapper-chisiamo > img {
-  max-width: 5px;
 }
 
 .superspace {
