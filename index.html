@@ -1,288 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>🗺️</text></svg>"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-    <title>VentureLabs HCI</title>
-  </head>
-  <body>
-    <div style="overflow-x: hidden">
-      <div class="superspace" id="welcome"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>🗺️</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-      <!--! Presentazione -->
-      <div class="row mt-4 py-3" id="presentazione">
-        <div class="col-12 d-flex flex-column text-center" style="padding: 0%">
-          <h1 style="font-size: 320%; font-weight: 800; letter-spacing: -1.9px">Venture Labs</h1>
-          <div class="wrapper-presentazione" style="margin-top: 45px">
-            <div class="coppia">
-              <p class="emoji">👋</p>
-              <p class="text-secondary fw-normal py-2">
-                Benvenuto nel sito di presentazione del nostro progetto del corso di
-                <b>Human-Computer Interaction (a.a. 2024/25, Politecnico di Milano).</b>
-              </p>
-            </div>
-            <div class="coppia">
-              <p class="emoji">📚</p>
-              <p class="text-secondary fw-normal py-2">
-                Seguendo il <b>paradigma UCD</b>, noi VentureLabs abbiamo sviluppato la nostra idea, secondo fasi successive. Guidati dai docenti
-                abbiamo ascoltato e analizzato i bisogni degli utenti e, a seguito di varie sessioni di brainstorming e di lavoro, siamo riusciti a
-                sviluppare il prototipo Figma del nostro servizio.
-              </p>
-            </div>
-            <div class="coppia">
-              <p class="emoji">💻</p>
-              <p class="text-secondary fw-normal py-2">È possibile <b>provare il prototipo direttamente su Figma.</b></p>
-            </div>
-            <div class="coppia">
-              <p class="emoji">🗂️</p>
-              <p class="text-secondary fw-normal py-2">
-                Scorrendo nella pagina, è possibile scoprire più nel dettaglio il lavoro svolto nelle varie fasi
-                <b style="font-weight: 900">scaricando il documento.</b>
-                <!-- <br /><b style="font-weight: 900; letter-spacing: 0.6px">Clicca sull'imagine della fase corrispondente per aprire il documento dettagliato.</b> -->
-              </p>
-            </div>
-            <!--!TODO Github e Figma -->
-            <div class="wrapper-link" style="padding-top: 40px">
-              <div class="super-wrapper-pannello">
-                <a href="https://github.com/gixium/VentureLabs" target="_blank" style="text-decoration: none; color: inherit">
-                  <button style="border-radius: 25px; font-weight: 600">Github</button>
-                </a>
-                <a
-                  href="https://www.figma.com/design/swfDIEpsLxOIab9zs9tGFm/mid-fide-proje?node-id=1-330&t=6GfEilOIqsUak1aX-1"
-                  target="_blank"
-                  style="text-decoration: none; color: inherit"
-                >
-                  <button style="border-radius: 25px; font-weight: 600">Figma</button>
-                </a>
-              </div>
-              <div class="super-wrapper-pannello" style="margin-left: -20px">
-                <a href="#about" style="text-decoration: none; color: inherit">
-                  <button style="border-radius: 25px; font-weight: 600">Consegne</button>
-                </a>
-                <a href="#chisiamo" style="text-decoration: none; color: inherit">
-                  <button style="border-radius: 25px; font-weight: 600">Chi siamo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <title>VentureLabs HCI</title>
+</head>
 
-      <div class="superspace"></div>
+<body>
+  <div style="overflow-x: hidden">
+    <div class="superspace" id="welcome"></div>
 
-      <!--! Fasi del progetto -->
-      <section class="container py-5" id="about">
-        <div class="row mt-4 py-3">
-          <div class="col-12 d-flex flex-column text-center">
-            <h2 style="font-size: 320%; font-weight: 800; letter-spacing: -1.9px">FLÂNEUR</h2>
-            <h5 class="text-secondary fw-normal py-2" style="font-weight: 600 !important">DISCOVER THE UNSEEN.</h5>
-            <h5 class="text-secondary fw-normal py-2" style="font-weight: 600 !important; transform: translateY(-20px)">STYLE IT. FEEL IT. SHARE IT.</h5>
-          </div>
-        </div>
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5 style="font-size: 160%; font-weight: 700">NEEDFINDING</h5>
-            <!-- <h5>OTTOBRE 2024</h5> -->
-            <!-- <a href="https://github.com/gixium/VentureLabs/blob/main/C1/C1%20-%20Needfinding.pdf" style="text-decoration: none; color: inherit"> -->
-            <a href="C1/C1 - Needfinding.pdf" target="_blank" style="text-decoration: none; color: inherit">
-              <button class="tiny">Download</button>
-            </a>
-            <p>Fase di raccolta e analisi tematica dei dati quantitativi e qualitativi, inerenti i bisogni dell'utente secondo il paradigma UCD.</p>
-          </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase" src="src/assets/consegne/fase-1.jpg" alt="img" />
-          </div>
-        </div>
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase" src="src/assets/consegne/fase-2.jpg" alt="img" />
-          </div>
-          <div class="col-9 col-md-5">
-            <h5 style="font-size: 160%; font-weight: 700">REFINEMENT E FOCUS GROUP</h5>
-            <!-- <h5>OTTOBRE 2024</h5> -->
-            <!-- <a href="https://github.com/gixium/VentureLabs/blob/main/C2/C2%20-%20Refinement.pdf" style="text-decoration: none; color: inherit"> -->
-            <a href="C2/C2 - Refinement.pdf" target="_blank" style="text-decoration: none; color: inherit">
-              <button class="tiny">Download</button>
-            </a>
-            <p>
-              Fase di raffinamento dei dati ottenuti durante la fase iniziale di Needfinding, tramite focus group, creazione di personas e scenari.
-              Nome servizio e value proposition iniziale.
+    <!--! Presentazione -->
+    <div class="row mt-4 py-3" id="presentazione">
+      <div class="col-12 d-flex flex-column text-center" style="padding: 0%">
+        <h1 style="font-size: 320%; font-weight: 800; letter-spacing: -1.9px">Venture Labs</h1>
+        <div class="wrapper-presentazione" style="margin-top: 45px">
+          <div class="coppia">
+            <p class="emoji">👋</p>
+            <p class="text-secondary fw-normal py-2">
+              Benvenuto nel sito di presentazione del nostro progetto del corso di
+              <b>Human-Computer Interaction (a.a. 2024/25, Politecnico di Milano).</b>
             </p>
           </div>
-        </div>
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5 style="font-size: 160%; font-weight: 700">TASK, STORYBOARD,</h5>
-            <h5 style="font-size: 160%; transform: translateY(-8px); font-weight: 700">LOW FIDELITY PROTOTYPE</h5>
-            <!-- <h5>NOVEMBRE 2024</h5> -->
-            <!-- <a href="https://github.com/gixium/VentureLabs/blob/main/C3/C3%20-%20Task%20Storyboard%20LowFidelity.pdf" style="text-decoration: none; color: inherit"> -->
-            <a href="C3/C3 - Task Storyboard LowFidelity.pdf" target="_blank" style="text-decoration: none; color: inherit">
-              <button class="tiny">Download</button>
-            </a>
-            <p>
-              Fase di creazione e analisi dei task funzionali (base, intermedio, avanzato) del servizio, presentando un esempio di scenario tramite
-              una storyboard. L'esplorazione delle modalità e la presentazione di due possibili prototipi low fidelity si conclude con la scelta della
-              piattaforma finale.
+          <div class="coppia">
+            <p class="emoji">📚</p>
+            <p class="text-secondary fw-normal py-2">
+              Seguendo il <b>paradigma UCD</b>, noi VentureLabs abbiamo sviluppato la nostra idea, secondo fasi
+              successive. Guidati dai docenti
+              abbiamo ascoltato e analizzato i bisogni degli utenti e, a seguito di varie sessioni di brainstorming e di
+              lavoro, siamo riusciti a
+              sviluppare il prototipo Figma del nostro servizio.
             </p>
           </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase" src="src/assets/consegne/fase-3.jpg" alt="img" />
+          <div class="coppia">
+            <p class="emoji">💻</p>
+            <p class="text-secondary fw-normal py-2">È possibile <b>provare il prototipo direttamente su Figma.</b></p>
           </div>
-        </div>
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase" src="src/assets/consegne/fase-4.jpg" alt="img" />
+          <div class="coppia">
+            <p class="emoji">🗂️</p>
+            <p class="text-secondary fw-normal py-2">
+              Scorrendo nella pagina, è possibile scoprire più nel dettaglio il lavoro svolto nelle varie fasi
+              <b style="font-weight: 900">scaricando il documento.</b>
+              <!-- <br /><b style="font-weight: 900; letter-spacing: 0.6px">Clicca sull'imagine della fase corrispondente per aprire il documento dettagliato.</b> -->
+            </p>
           </div>
-          <div class="col-9 col-md-5">
-            <h5 style="font-size: 160%; font-weight: 700">MEDIUM FIDELITY PROTOTYPE</h5>
-            <h5>DICEMBRE 2024</h5>
-            <!-- TODO
-        <a href="..." target="_blank" style="text-decoration: none; color: inherit">
-          <button class="tiny">Download</button>
-        </a>
-        TODO -->
-            <p>...</p>
-          </div>
-        </div>
-
-        <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-          <div class="col-9 col-md-5 text-md-end">
-            <h5 style="font-size: 160%; font-weight: 700">USABILITY TESTING</h5>
-            <h5>DICEMBRE 2024</h5>
-            <!-- TODO
-        <a href="..." target="_blank" style="text-decoration: none; color: inherit">
-          <button class="tiny">Download</button>
-        </a>
-        TODO -->
-            <p>...</p>
-          </div>
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase" src="src/assets/consegne/fase-5.jpg" alt="img" />
-          </div>
-        </div>
-
-        <div class="row justify-content-md-end mt-5 pt-5">
-          <div class="col-3 col-md-2 img text-center">
-            <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase" src="src/assets/consegne/fase-6.jpg" alt="img" />
-          </div>
-          <div class="col-9 col-md-5">
-            <h5 style="font-size: 160%; font-weight: 700">ADVANCED USABILITY TESTING</h5>
-            <h5>DICEMBRE 2024</h5>
-            <!-- TODO
-        <a href="..." target="_blank" style="text-decoration: none; color: inherit">
-          <button class="tiny">Download</button>
-        </a>
-        TODO -->
-            <p>...</p>
-          </div>
-        </div>
-
-        <div class="superspace"></div>
-        <div class="superspace"></div>
-      </section>
-
-      <!--! Chi siamo -->
-      <h1 style="font-size: 320%; font-weight: 800; text-align: center; margin: 90px; letter-spacing: -1.9px; white-space: nowrap" id="chisiamo">
-        Chi siamo
-      </h1>
-
-      <div class="universe-pannello">
-        <div class="super-wrapper-pannello">
-          <div class="wrapper-pannello" style="width: 100%">
-            <div class="pannello">
-              <a href="https://www.instagram.com/meggiebejko/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/meggie.webp" alt="." />
-                  <p>Meggie</p>
-                  <p style="margin-top: -20px">Bejiko</p>
-                </div>
+          <!--!TODO Github e Figma -->
+          <div class="wrapper-link" style="padding-top: 40px">
+            <div class="super-wrapper-pannello">
+              <a href="https://github.com/gixium/VentureLabs" target="_blank"
+                style="text-decoration: none; color: inherit">
+                <button style="border-radius: 25px; font-weight: 600">Github</button>
+              </a>
+              <a href="https://www.figma.com/design/swfDIEpsLxOIab9zs9tGFm/mid-fide-proje?node-id=1-330&t=6GfEilOIqsUak1aX-1"
+                target="_blank" style="text-decoration: none; color: inherit">
+                <button style="border-radius: 25px; font-weight: 600">Figma</button>
               </a>
             </div>
-            <div class="pannello">
-              <a href="https://www.instagram.com/cricre00/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/cristiano.webp" alt="." />
-                  <p>Cristiano</p>
-                  <p style="margin-top: -20px">Crespi</p>
-                </div>
+            <div class="super-wrapper-pannello" style="margin-left: -20px">
+              <a href="#about" style="text-decoration: none; color: inherit">
+                <button style="border-radius: 25px; font-weight: 600">Consegne</button>
               </a>
-            </div>
-          </div>
-          <div class="wrapper-pannello" style="width: 100%">
-            <div class="pannello">
-              <!-- <a href="https://gianlucadipaola.com" target="_blank" style="text-decoration: none; color: inherit"> -->
-              <a href="https://www.instagram.com/gixium/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/gianluca.jpg" alt="." />
-                  <p>Gianluca</p>
-                  <p style="margin-top: -20px">Di Paola</p>
-                </div>
-              </a>
-            </div>
-            <div class="pannello">
-              <a href="https://www.instagram.com/francescogg/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/francesco.jpg" alt="." />
-                  <p>Francesco</p>
-                  <p style="margin-top: -20px">Giannì</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="super-wrapper-pannello" style="margin-top: 30px">
-          <div class="wrapper-pannello" style="width: 100%">
-            <div class="pannello">
-              <a href="https://www.instagram.com/juanmarco.palcepatagoc/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/marco.jpg" alt="." />
-                  <p>Marco Juan</p>
-                  <p style="margin-top: -20px">Patagoc</p>
-                </div>
-              </a>
-            </div>
-            <div class="pannello">
-              <a href="https://www.instagram.com/davide_roccuzz0/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/davide.webp" alt="." />
-                  <p>Davide</p>
-                  <p style="margin-top: -20px">Roccuzzo</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="wrapper-pannello" style="width: 100%">
-            <div class="pannello">
-              <a href="https://www.instagram.com/tomainoo/profilecard" target="_blank" style="text-decoration: none; color: inherit">
-                <div class="pannello-duo">
-                  <img src="src/assets/contatti/toma.jpg" alt="." />
-                  <p>Marco</p>
-                  <p style="margin-top: -20px">Tomaino</p>
-                </div>
+              <a href="#chisiamo" style="text-decoration: none; color: inherit">
+                <button style="border-radius: 25px; font-weight: 600">Chi siamo</button>
               </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="superspace"></div>
+
+    <!--! Fasi del progetto -->
+    <section class="container py-5" id="about">
+      <div class="row mt-4 py-3">
+        <div class="col-12 d-flex flex-column text-center">
+          <h2 style="font-size: 320%; font-weight: 800; letter-spacing: -1.9px">FLÂNEUR</h2>
+          <h5 class="text-secondary fw-normal py-2" style="font-weight: 600 !important">DISCOVER THE UNSEEN.</h5>
+          <h5 class="text-secondary fw-normal py-2" style="font-weight: 600 !important; transform: translateY(-20px)">
+            STYLE IT. FEEL IT. SHARE IT.</h5>
+        </div>
+      </div>
+      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+        <div class="col-9 col-md-5 text-md-end">
+          <h5 style="font-size: 160%; font-weight: 700">NEEDFINDING</h5>
+          <!-- <h5>OTTOBRE 2024</h5> -->
+          <!-- <a href="https://github.com/gixium/VentureLabs/blob/main/C1/C1%20-%20Needfinding.pdf" style="text-decoration: none; color: inherit"> -->
+          <a href="C1/C1 - Needfinding.pdf" target="_blank" style="text-decoration: none; color: inherit">
+            <button class="tiny">Download</button>
+          </a>
+          <p>Fase di raccolta e analisi tematica dei dati quantitativi e qualitativi, inerenti i bisogni dell'utente
+            secondo il paradigma UCD.</p>
+        </div>
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase"
+            src="src/assets/consegne/fase-1.jpg" alt="img" />
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase"
+            src="src/assets/consegne/fase-2.jpg" alt="img" />
+        </div>
+        <div class="col-9 col-md-5">
+          <h5 style="font-size: 160%; font-weight: 700">REFINEMENT E FOCUS GROUP</h5>
+          <!-- <h5>OTTOBRE 2024</h5> -->
+          <!-- <a href="https://github.com/gixium/VentureLabs/blob/main/C2/C2%20-%20Refinement.pdf" style="text-decoration: none; color: inherit"> -->
+          <a href="C2/C2 - Refinement.pdf" target="_blank" style="text-decoration: none; color: inherit">
+            <button class="tiny">Download</button>
+          </a>
+          <p>
+            Fase di raffinamento dei dati ottenuti durante la fase iniziale di Needfinding, tramite focus group,
+            creazione di personas e scenari.
+            Nome servizio e value proposition iniziale.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+        <div class="col-9 col-md-5 text-md-end">
+          <h5 style="font-size: 160%; font-weight: 700">TASK, STORYBOARD,</h5>
+          <h5 style="font-size: 160%; transform: translateY(-8px); font-weight: 700">LOW FIDELITY PROTOTYPE</h5>
+          <!-- <h5>NOVEMBRE 2024</h5> -->
+          <!-- <a href="https://github.com/gixium/VentureLabs/blob/main/C3/C3%20-%20Task%20Storyboard%20LowFidelity.pdf" style="text-decoration: none; color: inherit"> -->
+          <a href="C3/C3 - Task Storyboard LowFidelity.pdf" target="_blank"
+            style="text-decoration: none; color: inherit">
+            <button class="tiny">Download</button>
+          </a>
+          <p>
+            Fase di creazione e analisi dei task funzionali (base, intermedio, avanzato) del servizio, presentando un
+            esempio di scenario tramite
+            una storyboard. L'esplorazione delle modalità e la presentazione di due possibili prototipi low fidelity si
+            conclude con la scelta della
+            piattaforma finale.
+          </p>
+        </div>
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase"
+            src="src/assets/consegne/fase-3.jpg" alt="img" />
+        </div>
+      </div>
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase"
+            src="src/assets/consegne/fase-4.jpg" alt="img" />
+        </div>
+        <div class="col-9 col-md-5">
+          <h5 style="font-size: 160%; font-weight: 700">MEDIUM FIDELITY PROTOTYPE</h5>
+          <h5>DICEMBRE 2024</h5>
+          <a href="/C4/C4%20-%20Medium%20Fidelity%20Prototype.pdf" target="_blank"
+            style="text-decoration: none; color: inherit">
+            <button class="tiny">Document</button>
+          </a>
+          <a href="/C4/DOCUMENTO VALUTAZIONE EURISTICA.pdf" target="_blank"
+            style="text-decoration: none; color: inherit">
+            <button class="tiny">Guide</button>
+          </a>
+          <p>Fase di sviluppo del prototipo medium fidelity tramite l'uso di Figma. Il prototipo è stato migliorato man
+            mano per adattarlo sempre di più ad un contesto di utilizzo intuitivo ed efficace.</p>
+        </div>
+      </div>
+
+      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
+        <div class="col-9 col-md-5 text-md-end">
+          <h5 style="font-size: 160%; font-weight: 700">USABILITY TESTING</h5>
+          <h5>DICEMBRE 2024</h5>
+          <!-- TODO
+        <a href="..." target="_blank" style="text-decoration: none; color: inherit">
+          <button class="tiny">Download</button>
+        </a>
+        TODO -->
+          <p>...</p>
+        </div>
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase"
+            src="src/assets/consegne/fase-5.jpg" alt="img" />
+        </div>
+      </div>
+
+      <div class="row justify-content-md-end mt-5 pt-5">
+        <div class="col-3 col-md-2 img text-center">
+          <img class="rounded-circle border border-5 border-dark-subtle img-fluid fase"
+            src="src/assets/consegne/fase-6.jpg" alt="img" />
+        </div>
+        <div class="col-9 col-md-5">
+          <h5 style="font-size: 160%; font-weight: 700">ADVANCED USABILITY TESTING</h5>
+          <h5>DICEMBRE 2024</h5>
+          <!-- TODO
+        <a href="..." target="_blank" style="text-decoration: none; color: inherit">
+          <button class="tiny">Download</button>
+        </a>
+        TODO -->
+          <p>...</p>
+        </div>
+      </div>
 
       <div class="superspace"></div>
       <div class="superspace"></div>
+    </section>
 
-      <!-- <a href="#welcome" style="display: grid; place-items: center; text-decoration: none; color: inherit">
+    <!--! Chi siamo -->
+    <h1
+      style="font-size: 320%; font-weight: 800; text-align: center; margin: 90px; letter-spacing: -1.9px; white-space: nowrap"
+      id="chisiamo">
+      Chi siamo
+    </h1>
+
+    <div class="universe-pannello">
+      <div class="super-wrapper-pannello">
+        <div class="wrapper-pannello" style="width: 100%">
+          <div class="pannello">
+            <a href="https://www.instagram.com/meggiebejko/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/meggie.webp" alt="." />
+                <p>Meggie</p>
+                <p style="margin-top: -20px">Bejiko</p>
+              </div>
+            </a>
+          </div>
+          <div class="pannello">
+            <a href="https://www.instagram.com/cricre00/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/cristiano.webp" alt="." />
+                <p>Cristiano</p>
+                <p style="margin-top: -20px">Crespi</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="wrapper-pannello" style="width: 100%">
+          <div class="pannello">
+            <!-- <a href="https://gianlucadipaola.com" target="_blank" style="text-decoration: none; color: inherit"> -->
+            <a href="https://www.instagram.com/gixium/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/gianluca.jpg" alt="." />
+                <p>Gianluca</p>
+                <p style="margin-top: -20px">Di Paola</p>
+              </div>
+            </a>
+          </div>
+          <div class="pannello">
+            <a href="https://www.instagram.com/francescogg/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/francesco.jpg" alt="." />
+                <p>Francesco</p>
+                <p style="margin-top: -20px">Giannì</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="super-wrapper-pannello" style="margin-top: 30px">
+        <div class="wrapper-pannello" style="width: 100%">
+          <div class="pannello">
+            <a href="https://www.instagram.com/juanmarco.palcepatagoc/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/marco.jpg" alt="." />
+                <p>Marco Juan</p>
+                <p style="margin-top: -20px">Patagoc</p>
+              </div>
+            </a>
+          </div>
+          <div class="pannello">
+            <a href="https://www.instagram.com/davide_roccuzz0/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/davide.webp" alt="." />
+                <p>Davide</p>
+                <p style="margin-top: -20px">Roccuzzo</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="wrapper-pannello" style="width: 100%">
+          <div class="pannello">
+            <a href="https://www.instagram.com/tomainoo/profilecard" target="_blank"
+              style="text-decoration: none; color: inherit">
+              <div class="pannello-duo">
+                <img src="src/assets/contatti/toma.jpg" alt="." />
+                <p>Marco</p>
+                <p style="margin-top: -20px">Tomaino</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="superspace"></div>
+    <div class="superspace"></div>
+
+    <!-- <a href="#welcome" style="display: grid; place-items: center; text-decoration: none; color: inherit">
         <button style="border-radius: 25px; font-weight: 600">
           <p style="margin-top: 12px">Back to</p>
           <p style="transform: translateY(-18px)">the top</p>
@@ -291,6 +313,7 @@
 
       <div class="superspace"></div>
       <div class="superspace"></div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
