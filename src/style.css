@@ -267,10 +267,13 @@ h1 {
   .wrapper-presentazione {
     width: 80%;
   }
+  .titolone {
+    translate: translateX(7%);;
+  }
   .piccì {
     /* visibility: hidden;
     display: none; */
-    transform: translate(10%, -5%);
+    transform: translate(8%, 0%);
   }
   .cestello {
     display: flex;
@@ -282,6 +285,9 @@ h1 {
 @media screen and (min-width: 1501px) {
   .wrapper-presentazione {
     /* width: 1200px; */
+  }
+  .titolone {
+    translate: translateX(17%);;
   }
 }
 
