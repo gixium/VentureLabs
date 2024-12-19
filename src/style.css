@@ -234,6 +234,7 @@ h1 {
   flex-direction: column;
   width: 80%;
   align-self: center;
+  transform: translateX(10%);
 }
 
 .coppia {
@@ -266,10 +267,27 @@ h1 {
   .wrapper-presentazione {
     width: 80%;
   }
+  .piccì {
+    /* visibility: hidden;
+    display: none; */
+    transform: translate(10%, -5%);
+  }
+  .cestello {
+    display: flex;
+    flex-direction: column;
+    margin-left: -8%;
+  }
 }
 
 @media screen and (min-width: 1501px) {
   .wrapper-presentazione {
-    width: 1200px;
+    /* width: 1200px; */
   }
+}
+
+.cestello {
+  /* background: rgb(255, 236, 236); */
+  display: flex;
+  padding-left: 5%;
+  padding-right: 10%;
 }
