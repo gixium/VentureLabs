@@ -1,3 +1,7 @@
+.piccì {
+  visibility: hidden;
+}
+
 /* Color variables */
 :root {
   --white-color: #fff;
@@ -271,8 +275,6 @@ h1 {
     translate: translateX(7%);;
   }
   .piccì {
-    /* visibility: hidden;
-    display: none; */
     transform: translate(8%, 0%);
   }
   .cestello {
