@@ -124,6 +124,10 @@ button:hover {
   color: var(--gray-color);
   transform: translateY(-7px);
 }
+.loghetto:hover {
+  transition: all 0.3s ease 0s;
+  filter: invert(1);
+}
 
 button:active {
   transform: translateY(-1px);
@@ -216,6 +220,7 @@ button.tiny {
   .super-wrapper-pannello {
     display: flex;
     flex-direction: column;
+    column-gap: 0px;
   }
 }
 
@@ -234,7 +239,6 @@ h1 {
   flex-direction: column;
   width: 80%;
   align-self: center;
-  transform: translateX(10%);
 }
 
 .coppia {
@@ -267,37 +271,10 @@ h1 {
   .wrapper-presentazione {
     width: 80%;
   }
-  .titolone {
-    transform: translate(7%, 150%);
-  }
-  .piccì {
-    transform: translate(8%, 0%);
-  }
-  .cestello {
-    display: flex;
-    flex-direction: column;
-    margin-left: -8%;
-  }
 }
 
 @media screen and (min-width: 1501px) {
   .wrapper-presentazione {
-    /* width: 1200px; */
+    width: 1200px;
   }
-  .titolone {
-    transform: translate(17%, 150%);
-  }
-}
-
-.cestello {
-  /* background: rgb(255, 236, 236); */
-  display: flex;
-  padding-left: 5%;
-  padding-right: 10%;
-}
-
-.titolone {
-  font-size: 320%;
-  font-weight: 800;
-  letter-spacing: -1.9px;
 }

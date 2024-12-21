@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flâneur</title>
+  <style>
+    .cestello {
+      overflow-x: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .piccì {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 50px;
+    }
+
+    .figma {
+      display: block;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .figma {
+        width: 300px;
+        height: 770px;
+      }
+    }
+
+    @media screen and (min-width: 1201px) {
+      .figma {
+        width: 800px;
+        height: 800px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="cestello">
+
+    <div class="piccì">
+      <iframe class="figma" style="display: block;" width="300" height="770"
+        src="https://embed.figma.com/proto/lteWTifbc0d2uPOErRGdOB/High-Fide-Project?node-id=2-648&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A648&embed-host=share%26hide-ui%3D1"
+        allowfullscreen></iframe>
+      <!-- sopra -->
+      <div
+        style="background: white; width: 850px; height: 5px; position: absolute; align-self: flex-start; transform: translateY(-2px);">
+      </div>
+      <!-- sinistra -->
+      <div
+        style="background: white; width: 10px; height: 800px;position: absolute; transform: translate(-165px, -28px);">
+      </div>
+      <div
+        style="background: white; width: 10px; height: 800px;position: absolute; transform: translate(-400px, -28px);">
+      </div>
+      <!-- destra -->
+      <div
+        style="background: white; width: 10px; height: 800px;position: absolute; transform: translate(165px, -28px);">
+      </div>
+      <div
+        style="background: white; width: 10px; height: 800px;position: absolute; transform: translate(400px, -28px);">
+      </div>
+      <!-- sotto -->
+      <div style="background: white; width: 850px; height: 60px; position: absolute; align-self: flex-end;"></div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
