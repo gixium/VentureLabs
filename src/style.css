@@ -1,7 +1,3 @@
-.piccì {
-  visibility: hidden;
-}
-
 /* Color variables */
 :root {
   --white-color: #fff;
@@ -272,7 +268,7 @@ h1 {
     width: 80%;
   }
   .titolone {
-    translate: translateX(7%);;
+    transform: translate(7%, 150%);
   }
   .piccì {
     transform: translate(8%, 0%);
@@ -289,7 +285,7 @@ h1 {
     /* width: 1200px; */
   }
   .titolone {
-    translate: translateX(17%);;
+    transform: translate(17%, 150%);
   }
 }
 
@@ -298,4 +294,10 @@ h1 {
   display: flex;
   padding-left: 5%;
   padding-right: 10%;
+}
+
+.titolone {
+  font-size: 320%;
+  font-weight: 800;
+  letter-spacing: -1.9px;
 }
