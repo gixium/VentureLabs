@@ -1,7 +1,7 @@
 # VentureLabs ➩ [WEBSITE](https://gixium.github.io/VentureLabs/)
 HCI - Polimi a.a. 2024/25
 
-| [Needfinding](/C1/C1%20-%20Needfinding.pdf) | [Refinement](/C2/C2%20-%20Refinement.pdf) | [Low Fidelity Prototype](/C3/C3%20-%20Task%20Storyboard%20LowFidelity.pdf) | [Medium F.P.](/C4/C4%20-%20Medium%20Fidelity%20Prototype.pdf) | [C5 - Valutazione euristica di gruppo](/C5/C5%20-%20Valutazione%20euristica%20di%20gruppo.pdf) | Advanced Usability Testing |
+| [Needfinding](/C1/C1%20-%20Needfinding.pdf) | [Refinement](/C2/C2%20-%20Refinement.pdf) | [Low Fidelity Prototype](/C3/C3%20-%20Task%20Storyboard%20LowFidelity.pdf) | [Medium F.P.](/C4/C4%20-%20Medium%20Fidelity%20Prototype.pdf) | [Valutazione euristica](/C5/C5%20-%20Valutazione%20euristica%20di%20gruppo.pdf) | Advanced Usability Testing |
 |:--------------:|:-------------:|:-------------------------:|:--------------:|:--------------------:|:----------------:|
 |       🟢       |       🟢      |            🟢             |      🟢        |         🟢           |     🟡           |
 
