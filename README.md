@@ -1,7 +1,9 @@
 # VentureLabs ➩ [WEBSITE](https://gixium.github.io/VentureLabs/)
 HCI - Polimi a.a. 2024/25
 
-| [Needfinding](/C1/C1%20-%20Needfinding.pdf) | [Refinement](/C2/C2%20-%20Refinement.pdf) | [Low Fidelity Prototype](/C3/C3%20-%20Task%20Storyboard%20LowFidelity.pdf) | [Medium F.P.](/C4/C4%20-%20Medium%20Fidelity%20Prototype.pdf) | [Valutazione euristica](/C5/C5%20-%20Valutazione%20euristica%20di%20gruppo.pdf) | Advanced Usability Testing |
+## Presentazione finale
+
+| [Needfinding](/C1/C1%20-%20Needfinding.pdf) | [Refinement](/C2/C2%20-%20Refinement.pdf) | [Low Fidelity Prototype](/C3/C3%20-%20Task%20Storyboard%20LowFidelity.pdf) | [Medium F.P.](/C4/C4%20-%20Medium%20Fidelity%20Prototype.pdf) | [Valutazione euristica](/C5/C5%20-%20Valutazione%20euristica%20di%20gruppo.pdf) | [Advanced Usability Testing](/C6/C6%20-%20User%20Testing.pdf) |
 |:--------------:|:-------------:|:-------------------------:|:--------------:|:--------------------:|:----------------:|
 |       🟢       |       🟢      |            🟢             |      🟢        |         🟢           |     🟢           |
 
@@ -23,3 +25,4 @@ Fase di sviluppo del prototipo medium fidelity tramite l'uso di Figma. Il protot
 Documento di valutazione del gruppo assegnato, per la peer review di corso. Nell'analisi del prototipo revisionato abbiamo applicato meticolosamente le euristiche di Nielsen, assegnando ad ogni problematica trovata un severity rating e offrendo un feedback costruttivo su come poter migliorare il lavoro.
 
 ### [C6 - User Testing](/C6/C6%20-%20User%20Testing.pdf)
+...
